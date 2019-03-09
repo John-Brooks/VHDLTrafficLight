@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FinalProject.srcs/sources_1/new/my_100M_modulus_ctr.vhd" \
+"../../../../FinalProject.srcs/sources_1/new/my_5_modulus_ctr.vhd" \
+"../../../../FinalProject.srcs/sources_1/new/my_5bit_down_load_ctr.vhd" \
+"../../../../FinalProject.srcs/sources_1/new/traffic_light.vhd" \
+"../../../../FinalProject.srcs/sim_1/new/traffic_light_tb.vhd" \
+
+# Do not sort compile order
+nosort

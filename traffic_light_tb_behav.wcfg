@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="traffic_light_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="traffic_light_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="260000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="325"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/traffic_light_tb/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/traffic_light_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/traffic_light_tb/LIGHTS" type="array">
+      <obj_property name="ElementShortName">LIGHTS[5:0]</obj_property>
+      <obj_property name="ObjectShortName">LIGHTS[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="group39" type="group">
+      <obj_property name="label">ctr_1 (Down Counter)</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/set" type="logic">
+         <obj_property name="ElementShortName">set</obj_property>
+         <obj_property name="ObjectShortName">set</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/data" type="array">
+         <obj_property name="ElementShortName">data[4:0]</obj_property>
+         <obj_property name="ObjectShortName">data[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/E" type="logic">
+         <obj_property name="ElementShortName">E</obj_property>
+         <obj_property name="ObjectShortName">E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/Q" type="array">
+         <obj_property name="ElementShortName">Q[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/z" type="logic">
+         <obj_property name="ElementShortName">z</obj_property>
+         <obj_property name="ObjectShortName">z</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1/Qt" type="other">
+         <obj_property name="ElementShortName">Qt</obj_property>
+         <obj_property name="ObjectShortName">Qt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group40" type="group">
+      <obj_property name="label">ctr_2 (Stage Counter)</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/E" type="logic">
+         <obj_property name="ElementShortName">E</obj_property>
+         <obj_property name="ObjectShortName">E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/Q" type="array">
+         <obj_property name="ElementShortName">Q[2:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[2:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/z" type="logic">
+         <obj_property name="ElementShortName">z</obj_property>
+         <obj_property name="ObjectShortName">z</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2/Qt" type="other">
+         <obj_property name="ElementShortName">Qt</obj_property>
+         <obj_property name="ObjectShortName">Qt</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">traffic_light</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/traffic_light_tb/uut/stage" type="array">
+         <obj_property name="ElementShortName">stage[2:0]</obj_property>
+         <obj_property name="ObjectShortName">stage[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/time_next" type="array">
+         <obj_property name="ElementShortName">time_next[4:0]</obj_property>
+         <obj_property name="ObjectShortName">time_next[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/lights" type="array">
+         <obj_property name="ElementShortName">lights[5:0]</obj_property>
+         <obj_property name="ObjectShortName">lights[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/one_sec_clock" type="logic">
+         <obj_property name="ElementShortName">one_sec_clock</obj_property>
+         <obj_property name="ObjectShortName">one_sec_clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/time_next" type="array">
+         <obj_property name="ElementShortName">time_next[4:0]</obj_property>
+         <obj_property name="ObjectShortName">time_next[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/load_next" type="logic">
+         <obj_property name="ElementShortName">load_next</obj_property>
+         <obj_property name="ObjectShortName">load_next</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_1_enable" type="logic">
+         <obj_property name="ElementShortName">ctr_1_enable</obj_property>
+         <obj_property name="ObjectShortName">ctr_1_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_2_enable" type="logic">
+         <obj_property name="ElementShortName">ctr_2_enable</obj_property>
+         <obj_property name="ObjectShortName">ctr_2_enable</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group415" type="group">
+      <obj_property name="label">ctr_0 (100MHz Divider)</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/resetn" type="logic">
+         <obj_property name="ElementShortName">resetn</obj_property>
+         <obj_property name="ObjectShortName">resetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/E" type="logic">
+         <obj_property name="ElementShortName">E</obj_property>
+         <obj_property name="ObjectShortName">E</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/Q" type="array">
+         <obj_property name="ElementShortName">Q[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/z" type="logic">
+         <obj_property name="ElementShortName">z</obj_property>
+         <obj_property name="ObjectShortName">z</obj_property>
+      </wvobject>
+      <wvobject fp_name="/traffic_light_tb/uut/ctr_0/Qt" type="other">
+         <obj_property name="ElementShortName">Qt</obj_property>
+         <obj_property name="ObjectShortName">Qt</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
