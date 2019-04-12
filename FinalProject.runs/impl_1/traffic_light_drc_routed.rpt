@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar  9 13:13:56 2019
+| Date         : Thu Apr 11 22:51:45 2019
 | Host         : DESKTOP-NBMMOI5 running 64-bit major release  (build 9200)
 | Command      : report_drc -file traffic_light_drc_routed.rpt -pb traffic_light_drc_routed.pb -rpx traffic_light_drc_routed.rpx
 | Design       : traffic_light
@@ -24,13 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 3
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PDRC-153    | Warning  | Gated clock check                                           | 2          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -50,21 +50,10 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net ctr_0/z is a gated clock net sourced by a combinational pin ctr_0/Qt[3]_i_2/O, cell ctr_0/Qt[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#2 Warning
-Gated clock check  
 Net ctr_1/CLK is a gated clock net sourced by a combinational pin ctr_1/Qt[2]_i_2/O, cell ctr_1/Qt[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT ctr_0/Qt[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
-ctr_1/Qt_reg[0], ctr_1/Qt_reg[1], ctr_1/Qt_reg[2], ctr_1/Qt_reg[3]
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT ctr_1/Qt[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
 ctr_2/Qt_reg[0], ctr_2/Qt_reg[1], ctr_2/Qt_reg[2]

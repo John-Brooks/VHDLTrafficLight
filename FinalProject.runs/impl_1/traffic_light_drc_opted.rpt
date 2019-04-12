@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar  9 13:13:29 2019
+| Date         : Thu Apr 11 22:51:18 2019
 | Host         : DESKTOP-NBMMOI5 running 64-bit major release  (build 9200)
 | Command      : report_drc -file traffic_light_drc_opted.rpt -pb traffic_light_drc_opted.pb -rpx traffic_light_drc_opted.rpx
 | Design       : traffic_light
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 3
+             Violations found: 2
 +-------------+----------+-------------------------------------------------------------+------------+
 | Rule        | Severity | Description                                                 | Violations |
 +-------------+----------+-------------------------------------------------------------+------------+
 | CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
 +-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -48,12 +48,6 @@ Refer to the device configuration user guide for more information.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT ctr_0/Qt[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
-ctr_1/Qt_reg[0], ctr_1/Qt_reg[1], ctr_1/Qt_reg[2], ctr_1/Qt_reg[3]
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT ctr_1/Qt[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
 ctr_2/Qt_reg[0], ctr_2/Qt_reg[1], ctr_2/Qt_reg[2]

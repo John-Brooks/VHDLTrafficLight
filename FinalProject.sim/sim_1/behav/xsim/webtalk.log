@@ -2,14 +2,14 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Mar  9 10:59:00 2019
-# Process ID: 8212
-# Current directory: C:/Users/John Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/John Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/John Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/John Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Fri Apr 12 00:05:04 2019
+# Process ID: 17388
+# Current directory: C:/Users/John Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/John Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/John Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/John Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/John -notrace
-source Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-couldn't read file "Brooks/FinalProject/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sat Mar  9 10:59:00 2019...
+source Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+couldn't read file "Brooks/VHDLTrafficLight/FinalProject.sim/sim_1/behav/xsim/xsim.dir/traffic_light_tb_behav/webtalk/xsim_webtalk.tcl": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 12 00:05:04 2019...

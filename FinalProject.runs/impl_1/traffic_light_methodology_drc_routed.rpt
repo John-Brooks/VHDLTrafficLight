@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sat Mar  9 13:13:56 2019
+| Date         : Thu Apr 11 22:51:46 2019
 | Host         : DESKTOP-NBMMOI5 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file traffic_light_methodology_drc_routed.rpt -pb traffic_light_methodology_drc_routed.pb -rpx traffic_light_methodology_drc_routed.rpx
 | Design       : traffic_light
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 8
+             Violations found: 10
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 7          |
-| TIMING-18 | Warning  | Missing input or output delay | 1          |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 8          |
+| TIMING-18 | Warning  | Missing input or output delay | 2          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -55,15 +55,20 @@ Related violations: <none>
 
 TIMING-17#5 Warning
 Non-clocked sequential cell  
-The clock pin ctr_2/Qt_reg[0]/C is not reached by a timing clock
+The clock pin ctr_1/Qt_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#6 Warning
 Non-clocked sequential cell  
-The clock pin ctr_2/Qt_reg[1]/C is not reached by a timing clock
+The clock pin ctr_2/Qt_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#7 Warning
+Non-clocked sequential cell  
+The clock pin ctr_2/Qt_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Warning
 Non-clocked sequential cell  
 The clock pin ctr_2/Qt_reg[2]/C is not reached by a timing clock
 Related violations: <none>
@@ -71,6 +76,11 @@ Related violations: <none>
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on resetn relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on clock_debug relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/John Brooks/FinalProject/FinalProject.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/John Brooks/FinalProject/FinalProject.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/John Brooks/FinalProject/FinalProject.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/John Brooks/VHDLTrafficLight/FinalProject.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/John Brooks/VHDLTrafficLight/FinalProject.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/John Brooks/VHDLTrafficLight/FinalProject.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/John Brooks/FinalProject/FinalProject.runs/synth_1/traffic_light.dcp}}
-  read_xdc {{C:/Users/John Brooks/FinalProject/FinalProject.srcs/constrs_1/imports/Downloads/100t.xdc}}
+  add_files -quiet {{C:/Users/John Brooks/VHDLTrafficLight/FinalProject.runs/synth_1/traffic_light.dcp}}
+  read_xdc {{C:/Users/John Brooks/VHDLTrafficLight/FinalProject.srcs/constrs_1/imports/Downloads/100t.xdc}}
   link_design -top traffic_light -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

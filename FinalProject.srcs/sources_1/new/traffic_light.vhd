@@ -34,7 +34,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity traffic_light is
     Port ( clock : in STD_LOGIC;
            resetn: in STD_LOGIC; 
-           lights : out STD_LOGIC_VECTOR (5 downto 0));
+           lights : out STD_LOGIC_VECTOR (5 downto 0);
+           clock_debug: out STD_LOGIC;
+           green_time : in STD_LOGIC_VECTOR (4 downto 0));
 end traffic_light;
 
 architecture Behavioral of traffic_light is
@@ -61,7 +63,7 @@ architecture Behavioral of traffic_light is
         port ( clock : in STD_LOGIC;
                resetn : in STD_LOGIC;
                E : in STD_LOGIC;
-               Q : out STD_LOGIC_VECTOR (31 downto 0);
+               Q : out STD_LOGIC_VECTOR (26 downto 0);
                z : out STD_LOGIC);
      end component;
      
@@ -100,19 +102,21 @@ begin
     ctr_1_enable <= '1';
     ctr_2_enable <= '1';
     
+    clock_debug <= one_sec_clock;
+    
     --For DEBUG / Testing purposes. Test bench will simulate 1 second clock.
     --this will be replaced with implementation of ctr_0
     --one_sec_clock <= clock;
      
     --LUT Time this is the time that is loaded for the following stage. Not! the current stage.                                   
     with stage select
-        time_next <= "01010" when "000", -- 10 seconds
+        time_next <= green_time when "000", -- 10 seconds
                      "00011" when "001", -- 3 seconds
                      "00001" when "010", -- 1 seconds 
-                     "01010" when "011", 
+                     green_time when "011", 
                      "00011" when "100", 
                      "00001" when "101", 
-                     "00001" when others;
+                     "11111" when others;
      
      --LUT Output                
      with resetn&stage select

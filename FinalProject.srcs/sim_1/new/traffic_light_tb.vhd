@@ -39,21 +39,26 @@ architecture Behavioral of traffic_light_tb is
     component traffic_light
         port ( clock : in STD_LOGIC;
                resetn: in STD_LOGIC; 
+               clock_debug: out STD_LOGIC;
+               green_time : in STD_LOGIC_VECTOR (4 downto 0);
                lights: out STD_LOGIC_VECTOR (5 downto 0));
     end component;
     
     signal CLOCK: STD_LOGIC;
     signal RESET: STD_LOGIC;
     signal LIGHTS: STD_LOGIC_VECTOR (5 downto 0);
+    signal CLOCK_DEBUG: STD_LOGIC;
+    signal GREEN_TIME : STD_LOGIC_VECTOR (4 downto 0);
 
 begin
-    uut: traffic_light port map(clock => CLOCK, resetn => RESET, lights => LIGHTS);
+    uut: traffic_light port map(clock => CLOCK, resetn => RESET, lights => LIGHTS, green_time => GREEN_TIME, clock_debug => CLOCK_DEBUG);
     
    stim_proc: process
    begin	
+        GREEN_TIME <= "11111";
         CLOCK <= '0';
         RESET <= '0';
-        wait for 10 ns;
+        wait for 100 ns;
         RESET <= '1';  
         wait for 10 ns;
         L1: loop
